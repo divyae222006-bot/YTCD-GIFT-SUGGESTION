@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTDC Gift Suggestion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>YTDC Gift Suggestion</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#packages">Packages</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+            <a href="#admin">Admin</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Find the Perfect Gift</h2>
+        <p>
+            Choose the right gift for every special occasion.
+        </p>
+
+        <button onclick="location.href='#booking'">
+            Find a Gift
+        </button>
+    </section>
+
+    <section id="categories">
+        <h2>Gift Categories</h2>
+        <div id="categoryList"></div>
+    </section>
+
+    <section id="products">
+        <h2>Gift Products</h2>
+        <div id="productList"></div>
+    </section>
+
+    <section id="destinations">
+        <h2>Delivery Destinations</h2>
+        <div id="destinationList"></div>
+    </section>
+
+    <section id="packages">
+        <h2>Gift Packages</h2>
+        <div id="packageList"></div>
+    </section>
+
+    <section id="booking">
+        <h2>Gift Booking</h2>
+
+        <form id="giftForm">
+
+            <input type="text" id="customerName"
+                   placeholder="Enter your name" required><br><br>
+
+            <input type="email" id="email"
+                   placeholder="Enter your email" required><br><br>
+
+            <input type="tel" id="phone"
+                   placeholder="Enter phone number" required><br><br.
+
+            <select id="occasion" required>
+                <option value="">Select Occasion</option>
+            </select>
+
+            <select id="giftProduct" required>
+                <option value="">Select Gift</option>
+            </select>
+
+            <select id="destination" required><br><br>
+                <option value="">Select Destination</option>
+            </select>
+
+            <input type="date" id="deliveryDate" required><br><br>
+
+            <input type="number" id="quantity"
+                   min="1" max="5" value="1" required><br><br>
+
+            <textarea id="message"
+                      placeholder="Enter your message"></textarea><br><br>
+
+            <button type="submit">
+                Submit Gift Request
+            </button>
+
+        </form>
+
+        <div id="bookingResult"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+            <input type="text" id="contactName"
+                   placeholder="Your Name" required><br><br>
+
+            <input type="email" id="contactEmail"
+                   placeholder="Your Email" required><br><br>
+
+            <textarea id="contactMessage"
+                      placeholder="Your Message" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="admin">
+        <h2>Admin Panel</h2>
+
+        <button id="loadAdminBtn">
+            View Gift Requests
+        </button>
+
+        <div id="adminRequests"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 YTDC Gift Suggestion</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
