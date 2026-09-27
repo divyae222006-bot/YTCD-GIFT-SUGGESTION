@@ -9,6 +9,7 @@ function setupAdminPanel() {
 
         const container =
             document.getElementById("adminRequests");
+            const totalRequests = requests.length;
 
         if (requests.length === 0) {
 
@@ -56,6 +57,7 @@ function setupAdminPanel() {
         table += "</table>";
 
         container.innerHTML = table;
+        table = `<p><strong>Total Requests: ${totalRequests}</strong></p>` + table;
     });
 }
 
