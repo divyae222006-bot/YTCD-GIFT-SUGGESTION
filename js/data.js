@@ -6,7 +6,9 @@ const YTDC_DATA = {
         "Graduation",
         "Festival",
         "Corporate",
-        "Personalized"
+        "Personalized",
+        "Thank You",
+        "Housewarming"
     ],
 
     products: [
@@ -49,6 +51,16 @@ const YTDC_DATA = {
             name: "Achievement Diary",
             price: 399,
             category: "Graduation"
+        },
+        {
+            name: "Personalized Keychain",
+            price: 249,
+            category: "Personalized"
+        },
+        {
+           name: "Graduation Gift Box",
+           price: 999,
+           category: "Graduation"
         }
     ],
 
