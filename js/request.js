@@ -56,7 +56,10 @@ function setupBookingForm() {
 
         const phone =
             document.getElementById("phone").value;
-
+            if (phone.length !== 10) {
+                 alert("Please enter a valid 10-digit phone number.");
+                 return;
+                }
         const selectedOccasion =
             occasion.value;
 
